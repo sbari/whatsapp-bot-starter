@@ -1,0 +1,11 @@
+{
+  "prefix": "!",
+  "adminNumbers": [
+    "YOUR_PHONE_NUMBER_HERE"
+  ],
+  "enabledCommands": [
+    "hello",
+    "help",
+    "ping"
+  ]
+}
