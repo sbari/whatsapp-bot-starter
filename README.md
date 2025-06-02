@@ -1,5 +1,10 @@
 # WhatsApp Bot Starter
 
+![Node.js](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Stars](https://img.shields.io/github/stars/sbari/whatsapp-bot-starter)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
+
 A simple and extensible WhatsApp bot with Google Calendar integration.
 
 ## Features
@@ -117,6 +122,64 @@ Scan the QR code with WhatsApp.
 ✅ Event removed successfully!
 ```
 
+## 🐳 Docker Deployment
+
+### Quick Start with Docker
+
+1. **Build and run:**
+```bash
+docker-compose up -d
+```
+
+2. **View logs:**
+```bash
+docker-compose logs -f
+```
+
+3. **Stop:**
+```bash
+docker-compose down
+```
+
+### Docker Commands
+
+```bash
+# Build image
+npm run docker:build
+
+# Start bot
+npm run docker:up
+
+# View logs
+npm run docker:logs
+
+# Stop bot
+npm run docker:down
+
+# Restart bot
+npm run docker:restart
+```
+
+### Requirements
+
+- Docker 20.0+
+- Docker Compose 2.0+
+- Your `config.json` file configured
+- Your `service-account.json` file (if using Google Calendar)
+
+### Persistent Data
+
+The bot stores WhatsApp session data in Docker volumes:
+- `whatsapp_sessions` - Authentication data
+- `whatsapp_cache` - Cache files
+
+To reset WhatsApp connection:
+```bash
+docker-compose down
+docker volume rm whatsapp-bot-starter_whatsapp_sessions
+docker-compose up -d
+```
+
 ## Adding a New Command
 
 1. Create a file in `src/commands/`:
@@ -165,6 +228,9 @@ whatsapp-bot-starter/
 │   │   └── calendarService.js
 │   ├── bot.js              # Main bot
 │   └── index.js           # Entry point
+├── Dockerfile             # Docker configuration
+├── docker-compose.yml     # Docker Compose setup
+├── .dockerignore          # Docker ignore file
 ├── config.example.json    # Example configuration
 ├── package.json
 └── README.md
@@ -213,6 +279,11 @@ whatsapp-bot-starter/
 - Confirm OpenWeatherMap API key is valid
 - New API keys can take up to 2 hours to activate
 - Check API usage limits
+
+### Docker Issues
+- Ensure Docker Desktop is running
+- Check that ports are not already in use
+- Verify Docker Compose version compatibility
 
 ## Contributing
 
