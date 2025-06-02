@@ -1,4 +1,4 @@
-const CalendarService = require('../services/calendarService');
+const CalendarService = require('../services/CalendarService');
 
 module.exports = {
   name: 'planning',
