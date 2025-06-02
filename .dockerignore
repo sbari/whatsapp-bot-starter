@@ -1,0 +1,41 @@
+# Node modules (seront installés dans le conteneur)
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# Fichiers de configuration locaux (sensibles)
+config.json
+service-account.json
+
+# Sessions WhatsApp locales
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Logs
+logs/
+*.log
+
+# Documentation
+README.md
+docs/
+
+# Fichiers de développement
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
