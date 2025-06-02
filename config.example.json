@@ -5,7 +5,19 @@
   ],
   "enabledCommands": [
     "hello",
-    "help",
-    "ping"
-  ]
+    "help", 
+    "ping",
+    "status",
+    "weather",
+    "event-add",
+    "event-remove",
+    "planning"
+  ],
+  "openWeatherApiKey": "YOUR_OPENWEATHER_API_KEY_HERE",
+  "googleCalendar": {
+    "enabled": false,
+    "calendarId": "YOUR_CALENDAR_ID@group.calendar.google.com",
+    "serviceAccountFile": "service-account.json",
+    "timeZone": "Europe/Paris"
+  }
 }

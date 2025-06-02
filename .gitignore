@@ -1,10 +1,16 @@
 # Node modules
 node_modules/
 
-# WhatsApp session data (contient les données d'authentification)
+# WhatsApp session data
 .wwebjs_auth/
 .wwebjs_cache/
 whatsapp-session/
+
+# Configuration with real data
+config.json
+
+# Google service account (sensitive)
+service-account.json
 
 # Logs
 logs/
@@ -27,6 +33,3 @@ Thumbs.db
 # Temporary files
 tmp/
 temp/
-
-# Config with real data
-config.json
