@@ -12,7 +12,7 @@ A simple and extensible WhatsApp bot with Google Calendar integration.
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/whatsapp-bot-starter.git
+git clone https://github.com/sbari/whatsapp-bot-starter.git
 cd whatsapp-bot-starter
 npm install
 ```
@@ -224,7 +224,7 @@ whatsapp-bot-starter/
 
 ## Support
 
-- [GitHub Issues](https://github.com/your-username/whatsapp-bot-starter/issues)
+- [GitHub Issues](https://github.com/sbari/whatsapp-bot-starter/issues)
 - [WhatsApp Web.js Documentation](https://wwebjs.dev/)
 - [Google Calendar API Documentation](https://developers.google.com/calendar)
 
