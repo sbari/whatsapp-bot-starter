@@ -1,30 +1,48 @@
 {
-    "name": "simple-whatsapp-bot",
+    "name": "whatsapp-bot-starter",
     "version": "1.0.0",
-    "description": "A simple WhatsApp bot with customizable commands",
+    "description": "A professional WhatsApp bot framework with Google Calendar integration",
     "main": "src/index.js",
     "scripts": {
-        "start": "node src/index.js",
-        "dev": "nodemon src/index.js"
+      "start": "node src/index.js",
+      "dev": "nodemon src/index.js",
+      "test": "echo \"No tests yet\" && exit 0",
+      "lint": "echo \"No linter configured\" && exit 0",
+      "docker:build": "docker build -t whatsapp-bot-starter .",
+      "docker:run": "docker run -it --rm whatsapp-bot-starter",
+      "docker:up": "docker-compose up -d",
+      "docker:down": "docker-compose down",
+      "docker:logs": "docker-compose logs -f",
+      "docker:restart": "docker-compose restart"
     },
     "keywords": [
-        "whatsapp",
-        "bot",
-        "nodejs",
-        "simple"
+      "whatsapp",
+      "bot",
+      "automation", 
+      "calendar",
+      "nodejs",
+      "framework"
     ],
-    "author": "Your Name",
+    "author": "Thibault SABATHIER <thibault.sabathier@gmail.com>",
     "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/sbari/whatsapp-bot-starter.git"
+    },
+    "bugs": {
+      "url": "https://github.com/sbari/whatsapp-bot-starter/issues"
+    },
+    "homepage": "https://github.com/sbari/whatsapp-bot-starter#readme",
+    "engines": {
+      "node": ">=16.0.0"
+    },
     "dependencies": {
-        "axios": "^1.6.0",
-        "googleapis": "^149.0.0",
-        "qrcode-terminal": "^0.12.0",
-        "whatsapp-web.js": "^1.23.0"
+      "axios": "^1.6.0",
+      "googleapis": "^149.0.0",
+      "qrcode-terminal": "^0.12.0",
+      "whatsapp-web.js": "^1.23.0"
     },
     "devDependencies": {
-        "nodemon": "^3.0.1"
-    },
-    "engines": {
-        "node": ">=16.0.0"
+      "nodemon": "^3.0.1"
     }
-}
+  }
